@@ -3,17 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- Load jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Page-specific stylesheet -->
   <link rel="stylesheet" type="text/css" href="files/css/about.css">
   <title>About | Nursery School | Washington University in St. Louis</title>
 </head>
 
 <body>
+  <!-- Header component -->
   <ts-load data-name="header"></ts-load>
 
+  <!-- Hero image -->
   <img src="https://nurseryschool.wustl.edu/files/2015/03/group-holi.jpg" alt="" style="width:100%;">
+
   <div id="page-content">
     <main>
       <h1>Application Procedure</h1>
@@ -21,6 +26,8 @@
         Parents interested in Washington University Nursery School should
         contact the school to schedule a visit.
       </h2>
+
+      <!-- General description of the application process -->
       <p>
         An application fee of $40 is required when applying to the nursery
         school. After this is received, your child is placed on an enrollment
@@ -29,14 +36,36 @@
         month’s tuition is due. This will be applied to tuition for the
         following May.
       </p>
+
+      <!-- Added block: short instruction + link to online application form -->
+      <p>
+        You must fill this form out to apply for admission. This form only
+        needs to be filled out once.
+        <br><br>
+        <a href="files/application.html">Fill out form</a>
+      </p>
+
+      <!-- Option to download and return PDF version of the application -->
       <p>
         You may fill out an Application for Admission online. You may also
         print out and return the pdf version:
         <a class="download" href="downloads/application.pdf" target="_blank">Application for Admission WUNS</a>
       </p>
+
+      <!-- Added list item with instructions for new families -->
+      <ul>
+        <li>
+          If you are new to the school, fill out the Application Form (this
+          form only needs to be filled out once).
+        </li>
+      </ul>
     </main>
   </div>
+
+  <!-- Footer component -->
   <ts-load data-name="footer"></ts-load>
+
+  <!-- JavaScript app script -->
   <script src="scripts/js/app.js"></script>
 </body>
 
