@@ -1,36 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="files/css/curriculum_overview.css">
+  <title>Curriculum Overview | Nursery School | Washington University in St. Louis</title>
+  <style>
+    .page-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+    @media (min-width: 960px) {
+      .page-layout {
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+      }
+    }
 
-  <title>
-    Curriculum Overview | Nursery School | Washington University in St. Louis
-  </title>
+    section + section { margin-top: 2rem; }
+    section h2 { margin: 0 0 .5rem; }
+    h3 { margin: 1rem 0 .25rem; }
+    .kicker { font-style: italic; color: #444; }
+
+    .media {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .media img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .download-block {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e4e4e4;
+    }
+  </style>
 </head>
 
 <body>
   <ts-load data-name="header"></ts-load>
+
   <div id="page-content">
     <main>
       <h1>Curriculum Overview</h1>
-      <p>
-        A thorough explanation of Washington University Nursery School’s
-        philosophy and educational practices may be found in the
-        <a class="download" href="downloads/curriculum_overview.pdf" target="_blank">Curriculum Overview</a>.
+      <p class="kicker">
+        Guided by Constructivist practice, we support each child’s social, emotional, intellectual, and physical growth through relevant, hands-on experiences at a pace that fits the child. Teachers pose open-ended questions, encourage independent thinking and collaboration, and draw on our community’s diversity to deepen learning.
       </p>
 
-      <img src="https://nurseryschool.wustl.edu/files/2018/05/bear-cub-2-1.jpg" alt="" width="350" height="320"
-       >
-      <br>
-      <br>
-      <img src="https://nurseryschool.wustl.edu/files/2018/05/bear-cub-1.jpg" alt="" width="350" height="450"
-       >
+      <div class="page-layout">
+        <div class="content">
+          <section id="social-emotional">
+            <h2>Social/Emotional Development</h2>
+            <ul>
+              <li>Build self-esteem through communication, planning, responsibility, participation, and sharing.</li>
+              <li>Strengthen collaboration, compromise, self-expression, and respect via dialogue and problem solving.</li>
+            </ul>
+          </section>
+
+          <section id="intellectual">
+            <h2>Intellectual Development</h2>
+            <h3 id="language">Language</h3>
+            <ul>
+              <li>Speaking and listening; dramatic play; stories and songs.</li>
+              <li>Recognizing meaningful words (names, calendar, jobs).</li>
+              <li>Dictating, drawing, writing stories; making their own books.</li>
+            </ul>
+
+            <h3 id="math">Math</h3>
+            <ul>
+              <li>Shapes, sizes, patterns, sequences; sorting and sets.</li>
+              <li>Counting and 1:1 correspondence; measurement (length/weight).</li>
+              <li>Using numbers as symbols and to represent quantity; graphing.</li>
+            </ul>
+
+            <h3 id="science">Science</h3>
+            <ul>
+              <li>Observing seasons, weather, plants, animals, and community life.</li>
+              <li>Sorting by properties; collecting and observing living things.</li>
+              <li>Conservation and respect for nature; recycling.</li>
+              <li>Growing plants; observing life cycles (e.g., chicks, butterflies, tadpoles).</li>
+              <li>Exploring magnets; changes in matter (heat/cold); cooking healthy snacks.</li>
+            </ul>
+
+            <h3 id="social-studies">Social Studies</h3>
+            <ul>
+              <li>Learning similarities/differences among peers and families.</li>
+              <li>Family visits to share traditions, languages, and stories.</li>
+              <li>Campus and neighborhood field trips; learning about occupations.</li>
+              <li>Experiencing multicultural customs and materials.</li>
+              <li>Understanding disability, empathy, and individual strengths.</li>
+              <li>Role-play related to families, jobs, abilities, and traditions.</li>
+            </ul>
+          </section>
+
+          <section id="physical">
+            <h2>Physical Development</h2>
+            <h3 id="gross-motor">Gross Motor</h3>
+            <ul>
+              <li>Climbers, slides, trikes/scooters/swings; balls and bean bags; bubbles and sand play.</li>
+              <li>Simple games and sport skills (throwing, hitting, kicking, hopscotch).</li>
+              <li>Campus hikes, movement to music, and block building.</li>
+            </ul>
+
+            <h3 id="fine-motor">Fine Motor</h3>
+            <ul>
+              <li>Tracing, copying, writing (journals, alphabet, names, messages).</li>
+              <li>Clipboards for writing/drawing in class, outdoors, and on trips.</li>
+              <li>Manipulatives: beads, Legos, nuts/bolts, tops, collage items.</li>
+            </ul>
+          </section>
+
+          <section id="visual-arts">
+            <h2>Visual Arts</h2>
+            <p>Emphasis on the creative <em>process</em>: exploration, choice, and expression across media to build focus, fine motor skill, confidence, and independence. Children also enjoy specialist-led visual arts, music, and drama.</p>
+            <ul>
+              <li>Drawing (crayons, pencils, markers, chalk); painting (brushes, fingers, found tools).</li>
+              <li>Printmaking (stamps, potatoes, objects); clay and dough for modeling.</li>
+              <li>Cutting, tearing, gluing, stapling; bead stringing.</li>
+              <li>Collage (fabric, paper, photos, small objects); 3D constructions (boxes, tubes, recyclables).</li>
+              <li>Wire, clay, wood, and mixed materials.</li>
+            </ul>
+          </section>
+
+          <section id="adapting-curriculum">
+            <h2>Help – Adapting the Curriculum</h2>
+            <p>Teachers observe and assess continually, planning experiences to meet individual and group needs. Supports may include:</p>
+            <ul>
+              <li>1:1 time to understand thinking, build trust, and confidence.</li>
+              <li>More exploration opportunities; simplifying by removing stimuli.</li>
+              <li>Expanding activities with added components or new sensory modes.</li>
+              <li>Individual, small-group, and large-group plans around a concept or skill.</li>
+            </ul>
+          </section>
+
+          <section id="conferences">
+            <h2>Parent/Teacher Conferences</h2>
+            <ul>
+              <li><strong>Fall (Informal):</strong> Conversation about the child’s activities and progress; Q&amp;A with families.</li>
+              <li><strong>Spring (Formal):</strong> Full assessment across the curriculum with observations; shared ahead of the meeting to support discussion.</li>
+            </ul>
+          </section>
+
+          <section class="download-block" id="download">
+            <h2>Download the full PDF</h2>
+            <p>
+              For a comprehensive description of our philosophy and practices, download the
+              <a class="download" href="downloads/curriculum_overview.pdf" target="_blank" rel="noopener">Curriculum Overview (PDF)</a>.
+            </p>
+          </section>
+        </div>
+
+        <aside class="media" aria-label="Classroom photos">
+          <img src="https://nurseryschool.wustl.edu/files/2018/05/bear-cub-2-1.jpg" alt="Child playing with blocks">
+          <img src="https://nurseryschool.wustl.edu/files/2018/05/bear-cub-1.jpg" alt="Child exploring classroom materials">
+        </aside>
+      </div>
     </main>
+
     <div class="widget-area stick secondary" role="complementary">
       <ul class="subnav">
         <li class="page_item page-item-95 page_item_has_children current_page_item">
@@ -74,8 +208,8 @@
       </ul>
     </div>
   </div>
+
   <ts-load data-name="footer"></ts-load>
   <script src="scripts/js/app.js"></script>
 </body>
-
 </html>

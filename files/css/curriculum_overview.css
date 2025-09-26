@@ -1,26 +1,93 @@
 @import url("common.css");
 @import url("side_menu.css");
+
 main ul {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 main li {
-    font-size: 1.15em;
-    margin-bottom: 1em;
+  font-size: 1.15em;
+  margin-bottom: 1em;
 }
 
 .classroom {
-    margin-top: 6em;
-    margin-bottom: 1em;
-    clear: both;
-    overflow: hidden;
+  margin-top: 6em;
+  margin-bottom: 1em;
+  clear: both;
+  overflow: hidden;
 }
 
 .classroom img {
-    float: left;
-    margin-right: 2.5em;
+  float: left;
+  margin-right: 2.5em;
 }
 
 .classroom p {
-    font-size: 1.15em;
+  font-size: 1.15em;
+}
+
+.kicker {
+  font-style: italic;
+  color: #444;
+}
+
+#social-emotional > h2,
+#intellectual > h2,
+#physical > h2,
+#adapting-curriculum > h2,
+#conferences > h2,
+.download-block > h2 {
+  font-weight: 700 !important;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.media {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.media img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+@media (min-width: 960px) {
+  .page-layout {
+    grid-template-columns: 2fr 1fr; /* content | images */
+    gap: 2rem;
+  }
+}
+
+.download-block {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e4e4e4;
+}
+
+section + section { margin-top: 2rem; }
+section h2 { margin: 0 0 .5rem; }
+h3 { margin: 1rem 0 .25rem; }
+
+.classroom img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-layout .content ul {
+  padding-inline-start: 2rem; 
+}
+
+.page-layout .content ul ul {
+  padding-inline-start: 2rem;
+}
+.page-layout .content ul ul ul {
+  padding-inline-start: 2rem;
 }
