@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="files/css/curriculum_overview.css" />
+  <title>Time | Nursery School | Washington University in St. Louis</title>
+  <style>
+    /* Page-local table styling to match the screenshot */
+    .schedule-title { margin: 2rem 0 .75rem; font-size: 1.75rem; }
+    .class-name { margin: 2.25rem 0 .5rem; font-size: 1.35rem; }
+
+    table.schedule { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    table.schedule th, table.schedule td {
+      padding: .85rem 1rem;
+      border: 1px solid #e5e5e5;
+      vertical-align: middle;
+      text-align: left;
+    }
+    /* Left column (times) styled bold like the screenshot */
+    table.schedule th {
+      font-weight: 700;
+      width: 34%;
+      white-space: nowrap;
+    }
+    /* Subtle striping */
+    table.schedule tr:nth-child(even) th,
+    table.schedule tr:nth-child(even) td {
+      background: #f4f4f4;
+    }
+    @media (max-width: 520px) {
+      table.schedule th { white-space: normal; width: 42%; }
+    }
+  </style>
+</head>
+
+<body>
+  <ts-load data-name="header"></ts-load>
+
+  <div id="page-content">
+    <main>
+      <h1>Schedule</h1>
+
+      <!-- TEDDY BEARS -->
+      <h2 class="class-name">Teddy Bears</h2>
+      <table class="schedule" aria-label="Teddy Bears class schedule">
+        <tbody>
+          <tr><th>8:50 – 9:10 a.m.</th><td>Welcome</td></tr>
+          <tr><th>9:10 – 10:10 a.m.</th><td>Free Choice Time</td></tr>
+          <tr><th>10:10 – 10:20 a.m.</th><td>Clean Up Time</td></tr>
+          <tr><th>10:20 – 10:35 a.m.</th><td>Calendar, songs, story time</td></tr>
+          <tr><th>10:35 – 10:45 a.m.</th><td>Wash hands, snack time</td></tr>
+          <tr><th>10:45 – 11:35 a.m.</th><td>Outside time</td></tr>
+          <tr><th>11:35 – 11:40 a.m.</th><td>Prepare for dismissal</td></tr>
+          <tr><th>11:40 – 11:45 a.m.</th><td>Dismissal</td></tr>
+        </tbody>
+      </table>
+
+      <!-- PANDA BEARS -->
+      <h2 class="class-name">Panda Bears</h2>
+      <table class="schedule" aria-label="Panda Bears class schedule">
+        <tbody>
+          <tr><th>12:30 p.m.</th><td>Arrival</td></tr>
+          <tr><th>12:30 – 1:40 p.m.</th><td>Free choice time</td></tr>
+          <tr><th>1:40 – 1:50 p.m.</th><td>Clean up time</td></tr>
+          <tr><th>1:50 – 2:05 p.m.</th><td>Songs, calendar, jobs</td></tr>
+          <tr><th>2:05 – 2:20 p.m.</th><td>Snack time</td></tr>
+          <tr><th>2:20 – 3:00 p.m.</th><td>Outdoor playtime</td></tr>
+          <tr><th>3:00 – 3:10 p.m.</th><td>Story time</td></tr>
+          <tr><th>3:10 – 3:15 p.m.</th><td>Departure</td></tr>
+        </tbody>
+      </table>
+
+      <!-- BEAR CUBS -->
+      <h2 class="class-name">Bear Cubs</h2>
+      <table class="schedule" aria-label="Bear Cubs class schedule">
+        <tbody>
+          <tr><th>8:50 – 10:00 a.m.</th><td>Arrival and outdoor play</td></tr>
+          <tr><th>10:00 – 10:15 a.m.</th><td>Morning circle, calendar, songs</td></tr>
+          <tr><th>10:15 – 10:30 a.m.</th><td>Wash hands, snack</td></tr>
+          <tr><th>10:30 – 11:20 a.m.</th><td>Free choice</td></tr>
+          <tr><th>11:20 – 11:30 a.m.</th><td>Clean up</td></tr>
+          <tr><th>11:30 – 11:40 a.m.</th><td>Story</td></tr>
+          <tr><th>11:40 – 11:45 a.m.</th><td>Departure</td></tr>
+        </tbody>
+      </table>
+
+      <!-- BIG BEARS -->
+      <h2 class="class-name">Big Bears</h2>
+      <table class="schedule" aria-label="Big Bears class schedule">
+        <tbody>
+          <tr><th>8:50 – 9:40 a.m.</th><td>Arrival and outdoor play</td></tr>
+          <tr><th>9:40 – 9:45 a.m.</th><td>Transition inside</td></tr>
+          <tr><th>9:45 – 10:00 a.m.</th><td>Snack</td></tr>
+          <tr><th>10:00 – 10:15 a.m.</th><td>Circle activities</td></tr>
+          <tr><th>10:15 – 11:00 a.m.</th><td>Choice time</td></tr>
+          <tr><th>11:00 – 11:05 a.m.</th><td>Clean up time</td></tr>
+          <tr><th>11:05 – 11:25 a.m.</th><td>Small and large group activities</td></tr>
+          <tr><th>11:25 – 11:40 a.m.</th><td>Songs and stories</td></tr>
+          <tr><th>11:05 – 11:25 a.m.</th><td>Transition to lunch, extended day or car line</td></tr>
+        </tbody>
+      </table>
+
+      <!-- SUN BEARS -->
+      <h2 class="class-name">Sun Bears</h2>
+      <table class="schedule" aria-label="Sun Bears class schedule">
+        <tbody>
+          <tr><th>12:30 p.m.</th><td>Carpool/arrival</td></tr>
+          <tr><th>12:30 – 1:00 p.m.</th><td>Welcome, circle activities</td></tr>
+          <tr><th>1:00 – 2:00 p.m.</th><td>Centers, free choice</td></tr>
+          <tr><th>2:00 – 2:10 p.m.</th><td>Clean up, organize</td></tr>
+          <tr><th>2:10 – 2:25 p.m.</th><td>Wash hands, snack</td></tr>
+          <tr><th>2:25 – 3:05 p.m.</th><td>Outdoor play</td></tr>
+          <tr><th>3:05 – 3:15 p.m.</th><td>Wrap up, dismissal</td></tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+
+  <ts-load data-name="footer"></ts-load>
+
+  <!-- Mark Calendar as active when you're on /files/time.html (optional) -->
+  <script>
+    (function () {
+      var cal = document.getElementById('calendar');
+      if (cal && location.pathname.endsWith('/files/time.html')) {
+        cal.setAttribute('aria-current', 'page');
+      }
+    })();
+  </script>
+</body>
+</html>
